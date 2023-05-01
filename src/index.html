@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>Pulse</title>
 
 </head>
@@ -118,114 +119,72 @@
                     <img src="img/slide3.png" alt="#">
                 </div>
             </div>
+            <button type="button" class="prev"><img src = "../icon/arrow_previous.svg"></button>
+            <button type="button" class="next"><img src = "../icon/arrow_next.svg"></button>
         </div>
     </section>
     <section class="catalog">
         <div class="container">
             <div class="catalog__title">Каталог пульсометров</div>
-            <div class="catalog__clocks">
-                <div class="catalog__clock-block">
-                    <img src="img/photo.png" alt="#" class="catalog__clock-img">
-                    <div class="catalog__clock-name">Пульсометр Polar FT1</div>
-                    <div class="catalog__clock-text">
-                        Для первых шагов в тренировках, основанных на сердечном ритме
-                    </div>
-                    <div class="catalog__clock-link"><a href="#">ПОДРОБНЕЕ</a></div>
-                    <div class="catalog__clock-line"></div>
-                    <div class="catalog_clock-price-block">
-                        <div class="catalog_clock-price-sale-block">
-                            <div class="catalog__clock-sale">4 750 руб</div>
-                            <div class="catalog__clock-price">4 500 руб.</div>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>ДЛЯ ФИТНЕСА</div></li>
+                <li class="catalog__tab"><div>ДЛЯ БЕГА</div></li>
+                <li class="catalog__tab"><div>ДЛЯ ТРИАТЛОНА</div></li>
+            </ul>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img src="img/photo.png" alt="#" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
                         </div>
-                        <button class="button button_buy">КУПИТЬ</button>
+                        <button class="catalog-item__btn button button_buy">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog__clock-block">
-                    <img src="img/photo.png" alt="#" class="catalog__clock-img">
-                    <div class="catalog__clock-name">Пульсометр Polar FT1</div>
-                    <div class="catalog__clock-text">
-                        Для первых шагов в тренировках, основанных на сердечном ритме
-                    </div>
-                    <div class="catalog__clock-link"><a href="#">ПОДРОБНЕЕ</a></div>
-                    <div class="catalog__clock-line"></div>
-                    <div class="catalog_clock-price-block">
-                        <div class="catalog_clock-price-sale-block">
-                            <div class="catalog__clock-sale">4 750 руб</div>
-                            <div class="catalog__clock-price">4 500 руб.</div>
+                <div class="catalog-item">
+                    <img src="img/photo.png" alt="#" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
                         </div>
-                        <button class="button button_buy">КУПИТЬ</button>
+                        <button class="catalog-item__btn button button_buy">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog__clock-block">
-                    <img src="img/photo.png" alt="#" class="catalog__clock-img">
-                    <div class="catalog__clock-name">Пульсометр Polar FT1</div>
-                    <div class="catalog__clock-text">
-                        Для первых шагов в тренировках, основанных на сердечном ритме
-                    </div>
-                    <div class="catalog__clock-link"><a href="#">ПОДРОБНЕЕ</a></div>
-                    <div class="catalog__clock-line"></div>
-                    <div class="catalog_clock-price-block">
-                        <div class="catalog_clock-price-sale-block">
-                            <div class="catalog__clock-sale">4 750 руб</div>
-                            <div class="catalog__clock-price">4 500 руб.</div>
+                <div class="catalog-item">
+                    <img src="img/photo.png" alt="#" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
                         </div>
-                        <button class="button button_buy">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog__clock-block">
-                    <img src="img/photo.png" alt="#" class="catalog__clock-img">
-                    <div class="catalog__clock-name">Пульсометр Polar FT1</div>
-                    <div class="catalog__clock-text">
-                        Для первых шагов в тренировках, основанных на сердечном ритме
-                    </div>
-                    <div class="catalog__clock-link"><a href="#">ПОДРОБНЕЕ</a></div>
-                    <div class="catalog__clock-line"></div>
-                    <div class="catalog_clock-price-block">
-                        <div class="catalog_clock-price-sale-block">
-                            <div class="catalog__clock-sale">4 750 руб</div>
-                            <div class="catalog__clock-price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_buy">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog__clock-block">
-                    <img src="img/photo.png" alt="#" class="catalog__clock-img">
-                    <div class="catalog__clock-name">Пульсометр Polar FT1</div>
-                    <div class="catalog__clock-text">
-                        Для первых шагов в тренировках, основанных на сердечном ритме
-                    </div>
-                    <div class="catalog__clock-link"><a href="#">ПОДРОБНЕЕ</a></div>
-                    <div class="catalog__clock-line"></div>
-                    <div class="catalog_clock-price-block">
-                        <div class="catalog_clock-price-sale-block">
-                            <div class="catalog__clock-sale">4 750 руб</div>
-                            <div class="catalog__clock-price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_buy">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog__clock-block">
-                    <img src="img/photo.png" alt="#" class="catalog__clock-img">
-                    <div class="catalog__clock-name">Пульсометр Polar FT1</div>
-                    <div class="catalog__clock-text">
-                        Для первых шагов в тренировках, основанных на сердечном ритме
-                    </div>
-                    <div class="catalog__clock-link"><a href="#">ПОДРОБНЕЕ</a></div>
-                    <div class="catalog__clock-line"></div>
-                    <div class="catalog_clock-price-block">
-                        <div class="catalog_clock-price-sale-block">
-                            <div class="catalog__clock-sale">4 750 руб</div>
-                            <div class="catalog__clock-price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_buy">КУПИТЬ</button>
+                        <button class="catalog-item__btn button button_buy">КУПИТЬ</button>
                     </div>
                 </div>
             </div>
+            <div class="catalog__content">
+            </div>
+            <div class="catalog__content">
+            </div>
         </div>
     </section>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
     <script src ="js/script.js"></script>
 </body>
 </html>
