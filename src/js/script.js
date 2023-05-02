@@ -78,6 +78,17 @@ document.querySelector('.next').onclick = function () {
 };
 
 
-                  
-              
-  
+
+
+function toogleSlide(item) {
+  $(item).each(function(i) {
+    $(this).on('click', function(e){
+      e.preventDefault();
+      $('.catalog-item__content').eq(i).toggleClass('catalog-item__content-active');
+      $('.catalog-item__list').eq(i).toggleClass('catalog-item__list-active')
+    })
+  }); 
+};
+toogleSlide('.catalog-item__link');
+toogleSlide('.catalog-item__list_link');
+
