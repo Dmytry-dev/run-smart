@@ -1,66 +1,4 @@
-/* let answer = confirm("Вам есть 18?")
-console.log(answer)
-
-if (answer == true){
-    console.log('Есть 18')
-}
-else {
- console.log('Нет 18и')
-};
-
-for(let i = 0;i <= 10; i++){
-    console.log(i);
-}; */
-// $(document).ready(function(){
-//     $('.carousel__inner').slick({
-//         dots: false,
-//         infinite: true,
-//         speed: 1500,
-//         slidesToShow: 1,
-//         adaptiveHeight: false,
-//         autoplay: true,
-//         autoplaySpeed: 2000,
-//         prevArrow: '<button type="button" class="slick-prev"><img src = "../icon/arrow_previous.svg"></button>',
-//         nextArrow: '<button type="button" class="slick-next"><img src = "../icon/arrow_next.svg"></button>',
-//         responsive: [
-//                 {
-//                 breakpoint: 1024,
-//                 settings: {
-//                   slidesToShow: 3,
-//                   slidesToScroll: 3,
-//                   infinite: true,
-//                   dots: true
-//                 }
-//             }
-//         ]
-//       });
-//   });
-
-
-//   $(document).ready(function(){
-//     $('.catalog__clocks').slick({
-//         dots: true,
-//         dotsClass: "'slick-dots",
-//         infinite: true,
-//         speed: 1500,
-//         slidesToShow: 1,
-//         adaptiveHeight: false,
-//         autoplay: false,
-//         autoplaySpeed: 2000,
-//         arrows: false,
-//         responsive: [
-//                 {
-//                 breakpoint: 1024,
-//                 settings: {
-//                   slidesToShow: 3,
-//                   slidesToScroll: 3,
-//                   infinite: true,
-//                   dots: false
-//                 }
-//             }
-//         ]
-//       });
-//   });
+// Карусель
 const slider = tns({
   container: '.carousel__inner',
   items: 1,
@@ -77,9 +15,15 @@ document.querySelector('.next').onclick = function () {
   slider.goTo('next');
 };
 
+// Переключатели
+$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+  $(this)
+    .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+    .closest('div.container').find('div.catalog__content').removeClass('catalog__content-active').eq($(this).index()).addClass('catalog__content-active');
+});
 
 
-
+// Подробнее
 function toogleSlide(item) {
   $(item).each(function(i) {
     $(this).on('click', function(e){
@@ -92,3 +36,16 @@ function toogleSlide(item) {
 toogleSlide('.catalog-item__link');
 toogleSlide('.catalog-item__list_link');
 
+// Модальные окна
+$('[data-modal = consultation]').on('click', function() {
+  $('.overlay, #consulting').fadeIn('slow');
+})
+$('.modal__close').on('click', function(){
+  $('.overlay, #consulting, #thanks, #order').fadeOut('slow')
+})
+$('.button_buy').each(function(i){
+  $(this).on('click', function() {
+    $('#order .modal__subtitle').text($('.catalog-item__subtitle').eq(i).text())
+    $('.overlay, #order').fadeIn('slow')
+  })
+})
