@@ -49,3 +49,7 @@ $('.button_buy').each(function(i){
     $('.overlay, #order').fadeIn('slow')
   })
 })
+$('.feed_form').validate();
+$('#consulting form').validate();
+$('#order form').validate();
+$('#consulting_form form').validate();
